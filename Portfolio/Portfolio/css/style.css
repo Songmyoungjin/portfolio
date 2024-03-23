@@ -85,3 +85,41 @@ button:focus{
   border:1px solid #03e8f9;
   border-radius:4px;
 }
+#home{
+  justify-content:center;
+  background-color:#050a13;
+  color:var(--color-text);
+  padding:5rem 1rem;
+  padding-top:7rem;
+  text-align:center;
+}
+.home__avatar{
+  width:250px;
+  height:250px;
+  border:3px solid  #03e8f9;
+  border-radius:100%;
+  object-fit:cover;
+
+}
+.home__title{
+  font-size:3rem;
+  margin-bottom:1rem;
+}
+.home__title--strong{
+  color:var(--color-accent);
+}
+.home__contact{
+  display:inline-block;
+  padding:0.5rem 1rem;
+  color:var(--color-black);
+  margin:2rem;
+  font-weight:bold;
+  border-radius:4px;
+  background-color:var(--color-blue);
+}
+.home__contact:hover{
+  color:var(--color-text);
+  outline:2px solid var(--color-accent);
+  background-color:transparent;
+  
+}
