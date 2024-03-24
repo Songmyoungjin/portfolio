@@ -69,6 +69,7 @@ button:focus{
   width:var(--size-max-width);
   margin:auto;
 }
+
 /*Header*/
 .header{
   position:fixed;
@@ -79,6 +80,7 @@ button:focus{
   padding:0.9rem;
   justify-content:space-between;
   align-items:center;
+  z-index:99;
 }
 .header__logo{
   display:flex;
@@ -160,12 +162,16 @@ button:focus{
   border-radius:1rem;
   cursor:default;
   box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+
+ 
 }
 .major__icon{
   font-size:4rem;
   margin:1rem 0;
   color:var(--color-accent);
   transition: all 300ms ease;
+  
+
 }
 .major_title{
   font-size:1.5rem;
@@ -190,4 +196,41 @@ button:focus{
 .job__period{
   color:var(--color-primary);
   font-size:0.8rem;
+}
+/*Skills*/
+#skills{
+  background-color:var(--color-primary-variant);
+  color:var(--color-text);
+  maring:2rem 3rem;
+  overflow:hidden;
+  box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+  position: relative; /* 섹션의 위치를 상대적으로 설정합니다. */
+  top: -80px; /* 네비게이션 바의 높이만큼 섹션을 위로 이동시킵니다. */
+  z-index: -1; /* 네비게이션 바보다 낮은 층위로 설정합니다. */
+
+}
+.skills{
+  display:grid;
+  grid-template-columns:6fr 4fr;
+  border-radius:8px;
+}
+.skills__title{
+  color:var(--color-accent);
+  margin:1rem 0;
+  font-size:1.2rem;
+}
+.skills__coding{
+  grid-row:span 2;
+  background-color:var(--color-primary);
+}
+.skills__tools{
+  padding:1rem;
+
+}
+.skills__etc{
+  padding:1rem;
+  background-color:var(--color-primary);
+  filter:brightness(150%);
+  margin:10% auto;
+  width:40%;
 }
