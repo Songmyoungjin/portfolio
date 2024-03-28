@@ -41,7 +41,7 @@ button{
   border:0;
 }
 button:focus{
-  outline:1px solid var(--color-accent);
+  outline:1px solid #03e8f9;
 }
 /*Common*/
 .section{
@@ -186,4 +186,37 @@ button:focus{
 .job__period{
   color:#050a13;
   font-size:0.8rem;
+}
+
+/*Skills*/
+#skills{
+  background-color:#1b1e26;
+  color:white;
+}
+.skills{
+  display:grid;
+  grid-template-columns:6fr 4fr;
+  margin:2rem 3rem;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
+}
+.skills__title{
+  color:#03e8f9;
+  margin:1rem 0;
+  font-size:1.2rem;
+}
+
+.skills__coding{
+  grid-row:span 2;
+  padding:1rem;
+  background-color:#050a13;
+}
+.skills__tools{
+  padding:1rem;
+}
+.skills__etc{
+  padding:1rem;
+  background-color:#050a13;
+  filter:brightness(150%);
 }
