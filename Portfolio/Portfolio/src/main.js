@@ -19,3 +19,14 @@ document.addEventListener('scroll', () => {
     console.log(1 - window.scrollY / homeHeight);
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+//스크롤 하면 arrow-up버튼이 나타나고
+//올리면 arrow-up버튼이 사라짐.
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  // 스크롤 되는 y좌표가 arrowHeight보다 크다면 다른 스타일링
+  if (window.scrollY > homeHeight /2 ) {
+    arrowUp.style.opacity = 1;
+} else {
+    arrowUp.style.opacity = 0;
+}
+});
