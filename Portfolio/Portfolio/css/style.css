@@ -436,6 +436,7 @@ button:focus{
   .job {
     justify-content: center;
   }
+
   .skills {
     grid-template-columns: 1fr;
   }
