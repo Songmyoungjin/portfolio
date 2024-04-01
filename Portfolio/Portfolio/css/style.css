@@ -43,7 +43,7 @@ button{
   border:0;
 }
 button:focus{
-  outline:1px solid #03e8f9;
+  outline:1px solid transparent;
 }
 /*Common*/
 .section{
@@ -92,11 +92,21 @@ button:focus{
   font-size:1.8rem;
 
 }
+.header__toggle{
+  display:none;
+  color:var(--color-white);
+  font-size:1.5rem;
+  position:absolute;
+  top:1.3rem;
+  right:1rem;
+}
 .header__menu {
   display:flex;
   gap:4px;
 }
 .header__menu__item{
+  display:block;
+  
   padding:8px 16px;
 
 }
@@ -406,7 +416,7 @@ button:focus{
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
   .title {
     font-size: 2rem;
@@ -417,12 +427,21 @@ button:focus{
   .header {
     flex-direction: column;
     align-items: start;
+    background-color:var(--color-primary);
+  }
+  .header__toggle{
+    display:block;
   }
   .header__menu {
+    display:none;
     flex-direction : column;
     text-align: center;
     padding: 1rem 4rem;
     gap: 1rem;
+  }
+  /*토글바 부분*/
+  .header__menu.open{
+    display:flex;
   }
   .header__nav{
     width: 100%;

@@ -24,9 +24,21 @@ document.addEventListener('scroll', () => {
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   // 스크롤 되는 y좌표가 arrowHeight보다 크다면 다른 스타일링
-  if (window.scrollY > homeHeight /2 ) {
+if (window.scrollY > homeHeight /2 ) {
     arrowUp.style.opacity = 1;
 } else {
     arrowUp.style.opacity = 0;
 }
 });
+//Navbar 토글버튼 클릭처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click',() => {
+navbarMenu.classList.toggle('open');
+})
+//Navbar 메뉴 클릭 시 메뉴를 자동으로 닫아줌
+
+navbarMenu.addEventListener('click',() => {
+navbarMenu.classList.remove('open');
+});
+
