@@ -1,4 +1,6 @@
 
+'use strict';
+
 // Header에 페이지 아래로 스크롤 시 다크 스타일링 적용
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight; // header 높이 측정
@@ -37,7 +39,6 @@ navbarToggle.addEventListener('click',() => {
 navbarMenu.classList.toggle('open');
 })
 //Navbar 메뉴 클릭 시 메뉴를 자동으로 닫아줌
-
 navbarMenu.addEventListener('click',() => {
 navbarMenu.classList.remove('open');
 });
